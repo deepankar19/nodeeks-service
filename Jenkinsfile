@@ -22,6 +22,9 @@ pipeline {
 
   environment {
     KUBECONFIG = "${WORKSPACE}/.kube/config"
+    AWS_REGION = "${params.AWS_REGION}"
+    EKS_CLUSTER_NAME = "${params.EKS_CLUSTER_NAME}"
+    K8S_NAMESPACE = "${params.K8S_NAMESPACE}"
   }
 
   stages {

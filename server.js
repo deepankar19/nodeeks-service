@@ -9,18 +9,18 @@ app.use(express.json());
 
 app.get("/api/message", (req, res) => {
   res.json({
-    message: "Hello from NovaPeak Labs API service!",
+    message: "Hello from zoraoTweaks API service!",
     timestamp: new Date().toISOString(),
   });
 });
 
 app.get("/api/home", (req, res) => {
   res.json({
-    brand: "NovaPeak Labs",
+    brand: "zoraoTweaks",
     hero: {
-      title: "We Build, Scale, and Run Modern SaaS Products",
+      title: "This is the New Grey Banner Title",
       subtitle:
-        "From multi-tenant SaaS platforms to AI automation and cloud-native DevOps, we build products engineered for enterprise scale and measurable business impact.",
+        "The content has been successfully updated according to the instructions.",
       ctaPrimary: "Book a Strategy Session",
       ctaSecondary: "Let's Discuss Your Project",
     },
@@ -79,6 +79,16 @@ app.get("/api/home", (req, res) => {
       "Modernization: Transforming Legacy Systems into AI-Fueled Innovation Engines",
       "Choosing Between Multi-Cloud vs. Hybrid Cloud: What Enterprise CIOs Should Ask",
       "The Ultimate Guide to Node.js Enterprise App Development",
+    ],
+    testimonials: [
+      {
+        quote: "zoraoTweaks transformed our legacy infrastructure into a real-time, high-performing platform. Truly game changing.",
+        author: "Jane Doe, CTO at DataCorp",
+      },
+      {
+        quote: "The best partner for scalable AI solutions. We cut our release cycles in half.",
+        author: "John Smith, VP Engineering at InnovateInc",
+      },
     ],
     updatedAt: new Date().toISOString(),
   });
